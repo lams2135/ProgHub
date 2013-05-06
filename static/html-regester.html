@@ -1,0 +1,66 @@
+<div class="container">
+  <form class="form-signup form-horizontal" id="regform" action="signup" method="post" onsubmit="return CheckForm()">
+    <h2 class="form-signin-heading">Welcome to ProgHub.SYSU</h2>
+    
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">Sign up</legend>
+      </div>
+      
+      <div class="control-group">
+        <!-- Text input-->
+        <label class="control-label" for="UID">User ID</label>
+        <div class="controls">
+          <input type="text" placeholder="4 - 32 bytes" class="input-xlarge" id="UID" name="uid" onkeyup="fmtestuid()">
+          <p class="help-block">Allowed: A-Z a-z 0-9 @ . - _</p>
+	  <p class="help-block" id="UID_HB"></p>
+	  <p class="help-block" id="UID_AS"></p>
+        </div>
+      </div>
+      
+    <div class="control-group">
+      <!-- Text input-->
+      <label class="control-label" for="PWD">Password</label>
+      <div class="controls">
+        <input type="password" placeholder="6 - 32 bytes" class="input-xlarge" id="PWD" name="upass" onkeyup="fmtestfpwd()">
+        <p class="help-block" id="PWD_HB"></p>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <!-- Text input-->
+      <label class="control-label" for="CPD">Confirm</label>
+      <div class="controls">
+        <input type="password" placeholder="Must be same as password" class="input-xlarge" id="CPD" onkeyup="fmtestcpwd()">
+        <p class="help-block" id="CPD_HB"></p>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <!-- Text input-->
+      <label class="control-label" for="USN">Student Number</label>
+      <div class="controls">
+        <input type="text" placeholder="Eg: 12330081" class="input-xlarge" id="USN" name="usn" onkeyup="fmtestsn()">
+        <p class="help-block" id="USN_HB"></p>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <!-- Text input-->
+      <label class="control-label" for="UEM">Email</label>
+      <div class="controls">
+        <input type="email" placeholder="Eg: lams2135@gmail.com" class="input-xlarge" name="uem" id="UEM">
+        <p class="help-block" id="UEM_HB"></p>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label"></label>
+      <!-- Button -->
+      <div class="controls">
+        <button onclick="CheckForm()" class="btn btn-success btn-large">Submit</button>
+      </div>
+    </div>
+    </fieldset>
+  </form>
+</div> <!-- /container -->

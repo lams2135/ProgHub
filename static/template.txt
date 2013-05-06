@@ -1,0 +1,43 @@
+html-head:
+ PH_HEAD_TITLE
+ PH_NAV_USER
+ : NOT_LOGGED <li><a href="login">Sign in</a></li>
+ : LOGGED signed-nav.html : PH_NAV_UID : uid;
+
+html-error:
+ PH_ERROR_INFO
+
+html-settings:
+ PH_UIF_UID
+ PH_UIF_SN
+ PH_UIF_EMAIL
+
+html-hwlist:
+ PH_USER_SUBMITTED
+ PH_TOTAL_HW
+ PH_USER_PROGRESS
+ PH_HWLIST_TABLE
+ PH_HWLIST_ADMINENT
+
+html-seehw:
+ PH_HW_TID
+ PH_HW_NAME
+ PH_HW_DES
+ PH_HW_FS
+ PH_HW_DL
+ PH_HW_REC
+
+html-uprd:
+ PH_RD_UPID
+ PH_RD_TIME
+ PH_RD_TID
+ PH_RD_SCO
+ PH_RD_TOTSCO
+ PH_RD_RES
+ PH_RD_OUTPUT
+
+html-edithwlist:
+ PH_HWLIST_TABLE
+
+html-rmhw:
+ PH_RMHW_TID

@@ -1,0 +1,74 @@
+<div class="container">
+  <form class="form-signup form-horizontal" id="settform" action="setuif" method="post" onsubmit="return CheckSettingForm()">
+    <h2 class="form-signin-heading">Settings</h2>
+    
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">Account settings</legend>
+      </div>
+      
+      <div class="control-group">
+        <!-- Text input-->
+        <label class="control-label">User ID</label>
+        <div class="controls">
+	  <input type="text" value="PH_UIF_UID" class="input-xlarge" disabled/>
+	  <p class="help-block">Dischangable</p>
+        </div>
+      </div>
+
+    <div class="control-group">
+      <!-- Text input-->
+      <label class="control-label" for="USN">Student Number</label>
+      <div class="controls">
+	  <input type="text" value="PH_UIF_SN" class="input-xlarge" disabled/>
+	<p class="help-block">Contact admins if you want to correct.</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <!-- Text input-->
+      <label class="control-label" for="OPWD">Old Password</label>
+      <div class="controls">
+        <input type="password" placeholder="6 - 32 bytes" class="input-xlarge" id="OPWD" name="opass">
+	<p class="help-block">Must input.</p>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <!-- Text input-->
+      <label class="control-label" for="PWD">New Password</label>
+      <div class="controls">
+        <input type="password" placeholder="6 - 32 bytes" class="input-xlarge" id="PWD" name="upass" onkeyup="fmtestfpwd()">
+	<p class="help-block">Leave it blank if not change.</p>
+        <p class="help-block" id="PWD_HB"></p>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <!-- Text input-->
+      <label class="control-label" for="CPD">Confirm New Password</label>
+      <div class="controls">
+        <input type="password" placeholder="Must be same as password" class="input-xlarge" id="CPD" onkeyup="fmtestcpwd()">
+        <p class="help-block" id="CPD_HB"></p>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <!-- Text input-->
+      <label class="control-label" for="UEM">Email</label>
+      <div class="controls">
+        <input type="email" placeholder="PH_UIF_EMAIL" class="input-xlarge" name="uem" id="UEM">
+	<p class="help-block">Leave it blank if not change.</p>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label"></label>
+      <!-- Button -->
+      <div class="controls">
+        <button onclick="CheckSettingForm()" class="btn btn-success btn-large">Submit</button>
+      </div>
+    </div>
+    </fieldset>
+  </form>
+</div> <!-- /container -->
